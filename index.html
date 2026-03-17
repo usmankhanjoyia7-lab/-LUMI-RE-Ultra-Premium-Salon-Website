@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- SEO Meta Tags -->
+<title>Lumière Beauty Salon | Luxury Hair, Skin & Bridal Services</title>
+<meta name="description" content="Lumière is London's premier luxury beauty salon. Expert hair styling, colouring, bridal makeup, skin treatments & more. Book your transformation today. Rated 4.9★ by 800+ clients.">
+<meta name="keywords" content="luxury beauty salon, hair salon London, bridal makeup, balayage, keratin treatment, skin facials, nail art, Mayfair salon">
+<meta name="author" content="Lumière Beauty Salon">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1C1A18">
+<link rel="canonical" href="https://www.lumieresalon.co.uk/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.lumieresalon.co.uk/">
+<meta property="og:title" content="Lumière Beauty Salon | Luxury Hair, Skin & Bridal Services">
+<meta property="og:description" content="London's premier luxury beauty salon — hair, makeup, skin & nails. Rated 4.9★ by 800+ clients. Book now.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=80">
+<meta property="og:site_name" content="Lumière Beauty Salon">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lumière Beauty Salon | Luxury Hair, Skin & Bridal">
+<meta name="twitter:description" content="London's premier luxury beauty salon. Book your transformation today.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=80">
+
+<!-- Schema.org JSON-LD -->
+ 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Lumière Beauty Salon",
+  "description": "London's premier luxury beauty salon offering hair styling, colouring, bridal makeup, skin treatments and nail art.",
+  "url": "https://www.lumieresalon.co.uk",
+  "telephone": "+44-20-7946-0892",
+  "email": "hello@lumieresalon.co.uk",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "24 Blossom Lane",
+    "addressLocality": "Mayfair",
+    "addressRegion": "London",
+    "postalCode": "W1K 4PL",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.5074,
+    "longitude": -0.1278
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"20:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"10:00","closes":"18:00"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "847",
+    "bestRating": "5"
+  },
+  "priceRange": "$$$",
+  "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=80",
+  "sameAs": [
+    "https://instagram.com/lumieresalon",
+    "https://facebook.com/lumieresalon"
+  ]
+}
+</script>
+ 
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ─── NAV ─── -->
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="nav-logo" aria-label="Lumière Beauty Salon Home">LUM<span>IÈ</span>RE</a>
+  <div class="nav-center" role="menubar">
+    <a href="#services" role="menuitem">Services</a>
+    <a href="#gallery" role="menuitem">Gallery</a>
+    <a href="#team" role="menuitem">Our Team</a>
+    <a href="#testimonials" role="menuitem">Reviews</a>
+    <a href="#offers" role="menuitem">Offers</a>
+  </div>
+  <div class="nav-right">
+    <span class="nav-tel" aria-label="Phone number">+44 20 7946 0892</span>
+    <button class="nav-book btn-primary" onclick="openModal()" aria-label="Book appointment">Book Now</button>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#gallery" onclick="closeMenu()">Gallery</a>
+  <a href="#team" onclick="closeMenu()">Our Team</a>
+  <a href="#testimonials" onclick="closeMenu()">Reviews</a>
+  <a href="#offers" onclick="closeMenu()">Offers</a>
+  <a href="#" onclick="openModal();closeMenu();return false;">Book Now ↗</a>
+</nav>
+
+<main id="main">
+
+<!-- ─── HERO ─── -->
+<section id="hero" aria-label="Hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow" role="text">Est. 2012 — Mayfair, London</div>
+    <h1 class="hero-h1">
+      Where Beauty<br>Becomes
+      <em>Artistry</em>
+    </h1>
+    <p class="hero-desc">Step into a sanctuary of refined luxury. Our master stylists craft bespoke transformations that illuminate your unique beauty — from precision colour to flawless bridal creations.</p>
+    <div class="hero-ctas">
+      <button class="btn-primary" onclick="openModal()" aria-label="Book your appointment">
+        Book Appointment
+        <span aria-hidden="true">→</span>
+      </button>
+      <a href="#services" class="btn-outline">Explore Services</a>
+    </div>
+    <div class="hero-trust" role="list" aria-label="Salon credentials">
+      <div role="listitem">
+        <div class="hero-trust-num">4.9★</div>
+        <div class="hero-trust-label">Google Rating</div>
+      </div>
+      <div role="listitem">
+        <div class="hero-trust-num">3,200+</div>
+        <div class="hero-trust-label">Happy Clients</div>
+      </div>
+      <div role="listitem">
+        <div class="hero-trust-num">12 Yrs</div>
+        <div class="hero-trust-label">Experience</div>
+      </div>
+      <div role="listitem">
+        <div class="hero-trust-num">8</div>
+        <div class="hero-trust-label">Award Wins</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right" role="img" aria-label="Luxury salon interior">
+    <div class="hero-img-main">
+      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=85&auto=format&fit=crop" alt="Lumière salon — luxury interior with warm lighting" loading="eager" fetchpriority="high" width="1200" height="1600">
+    </div>
+    <div class="hero-img-overlay" aria-hidden="true"></div>
+    <div class="hero-float-card" aria-label="Google rating">
+      <div class="hero-float-stars" aria-hidden="true">★★★★★</div>
+      <div class="hero-float-num">4.9/5</div>
+      <div class="hero-float-label">from 847 reviews</div>
+    </div>
+    <div class="hero-float-card2" aria-hidden="true">
+      <p>Next available</p>
+      <strong>Today at 3:00 PM</strong>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BOOKING BAR ─── -->
+<div id="booking-bar" role="search" aria-label="Quick appointment booking">
+  <div class="booking-label"><span>Book a Visit</span></div>
+  <div class="booking-fields">
+    <div class="booking-field-wrap">
+      <label for="b-service">Service</label>
+      <select id="b-service" class="booking-select" aria-label="Select service">
+        <option value="">Select Service</option>
+        <option>Hair Styling</option>
+        <option>Hair Colouring</option>
+        <option>Bridal Makeup</option>
+        <option>Skin Treatment</option>
+        <option>Nail Art</option>
+        <option>Keratin Treatment</option>
+        <option>Facial Therapy</option>
+      </select>
+    </div>
+    <div class="booking-field-wrap">
+      <label for="b-stylist">Stylist</label>
+      <select id="b-stylist" class="booking-select" aria-label="Choose stylist">
+        <option value="">Any Stylist</option>
+        <option>Sofia Laurent</option>
+        <option>Amara Nwosu</option>
+        <option>Isabelle Chen</option>
+      </select>
+    </div>
+    <div class="booking-field-wrap">
+      <label for="b-date">Date</label>
+      <select id="b-date" class="booking-select" aria-label="Select date">
+        <option value="">Select Date</option>
+        <option>Today</option>
+        <option>Tomorrow</option>
+        <option>This Weekend</option>
+        <option>Choose Date…</option>
+      </select>
+    </div>
+    <div class="booking-field-wrap">
+      <label for="b-time">Time</label>
+      <select id="b-time" class="booking-select" aria-label="Select time">
+        <option value="">Select Time</option>
+        <option>9:00 AM</option>
+        <option>11:00 AM</option>
+        <option>1:00 PM</option>
+        <option>3:00 PM</option>
+        <option>5:00 PM</option>
+        <option>7:00 PM</option>
+      </select>
+    </div>
+    <button class="booking-submit" onclick="openModal()" aria-label="Confirm booking">
+      Confirm ↗
+    </button>
+  </div>
+</div>
+
+<!-- ─── SERVICES ─── -->
+<section id="services" class="section" aria-labelledby="services-heading">
+  <div class="section-header reveal">
+    <div class="eyebrow">Our Expertise</div>
+    <h2 id="services-heading" class="serif">Signature <em>Services</em></h2>
+    <p class="section-desc">Each treatment is a bespoke experience, designed around you and delivered with extraordinary precision by certified masters.</p>
+  </div>
+  <div class="services-grid">
+    <article class="service-card reveal d1" role="article">
+      <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80&auto=format&fit=crop" alt="Professional hair styling service" loading="lazy" width="600" height="400">
+      </div>
+      <div class="service-name">Hair Styling</div>
+      <div class="service-desc">Precision cuts and luxury blowouts tailored to your face shape, lifestyle and personality.</div>
+      <div class="service-meta">
+        <span class="service-price">From £85</span>
+        <span class="service-duration">60–90 min</span>
+      </div>
+    </article>
+    <article class="service-card reveal d2" role="article">
+      <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?w=600&q=80&auto=format&fit=crop" alt="Balayage hair colouring treatment" loading="lazy" width="600" height="400">
+      </div>
+      <div class="service-name">Hair Colouring</div>
+      <div class="service-desc">Balayage, highlights and full colour transformations using premium Schwarzkopf and L'Oréal lines.</div>
+      <div class="service-meta">
+        <span class="service-price">From £140</span>
+        <span class="service-duration">2–4 hrs</span>
+      </div>
+    </article>
+    <article class="service-card reveal d3" role="article">
+      <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80&auto=format&fit=crop" alt="Luxury bridal makeup service" loading="lazy" width="600" height="400">
+      </div>
+      <div class="service-name">Bridal Makeup</div>
+      <div class="service-desc">Flawless, all-day looks for your most beautiful day. Full trial session included with every booking.</div>
+      <div class="service-meta">
+        <span class="service-price">From £250</span>
+        <span class="service-duration">2.5 hrs</span>
+      </div>
+    </article>
+    <article class="service-card reveal d4" role="article">
+      <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80&auto=format&fit=crop" alt="Premium skin treatment facial" loading="lazy" width="600" height="400">
+      </div>
+      <div class="service-name">Skin Treatments</div>
+      <div class="service-desc">Medical-grade facials, chemical peels and rejuvenating therapies for luminous, healthy skin.</div>
+      <div class="service-meta">
+        <span class="service-price">From £110</span>
+        <span class="service-duration">75 min</span>
+      </div>
+    </article>
+    <article class="service-card reveal d1" role="article">
+      <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop" alt="Nail art and manicure service" loading="lazy" width="600" height="400">
+      </div>
+      <div class="service-name">Nail Art</div>
+      <div class="service-desc">Manicures, gel overlays and bespoke nail art by our award-winning certified nail artists.</div>
+      <div class="service-meta">
+        <span class="service-price">From £55</span>
+        <span class="service-duration">45–90 min</span>
+      </div>
+    </article>
+    <article class="service-card reveal d2" role="article">
+      <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80&auto=format&fit=crop" alt="Keratin hair treatment" loading="lazy" width="600" height="400">
+      </div>
+      <div class="service-name">Keratin / Botox</div>
+      <div class="service-desc">Frizz-free, silky-smooth hair for up to 6 months using our premium Brazilian keratin system.</div>
+      <div class="service-meta">
+        <span class="service-price">From £180</span>
+        <span class="service-duration">3 hrs</span>
+      </div>
+    </article>
+    <article class="service-card reveal d3" role="article">
+      <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?w=600&q=80&auto=format&fit=crop" alt="Luxury facial therapy treatment" loading="lazy" width="600" height="400">
+      </div>
+      <div class="service-name">Facial Therapy</div>
+      <div class="service-desc">Deep cleansing and rejuvenating rituals using Dermalogica and La Mer premium skincare lines.</div>
+      <div class="service-meta">
+        <span class="service-price">From £95</span>
+        <span class="service-duration">60 min</span>
+      </div>
+    </article>
+    <article class="service-card reveal d4" role="article">
+      <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1583001308071-f2c2df65aa21?w=600&q=80&auto=format&fit=crop" alt="Hair repair and hydration treatment" loading="lazy" width="600" height="400">
+      </div>
+      <div class="service-name">Hair Treatments</div>
+      <div class="service-desc">Intensive hydration, repair and scalp therapy for stronger, shinier, healthier hair.</div>
+      <div class="service-meta">
+        <span class="service-price">From £70</span>
+        <span class="service-duration">45 min</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ─── GALLERY ─── -->
+<section id="gallery" class="section" aria-labelledby="gallery-heading" style="padding-bottom:3rem">
+  <div class="section-header reveal">
+    <div class="eyebrow">Transformation Gallery</div>
+    <h2 id="gallery-heading" class="serif">Our <em>Work</em></h2>
+    <p class="section-desc">Every look is a collaboration between our stylists and your vision. Browse our portfolio of real transformations.</p>
+  </div>
+  <div class="gallery-filters reveal" role="group" aria-label="Filter gallery by category">
+    <button class="filter-btn active" onclick="filterGallery(this,'all')">All</button>
+    <button class="filter-btn" onclick="filterGallery(this,'hair')">Hair</button>
+    <button class="filter-btn" onclick="filterGallery(this,'colour')">Colour</button>
+    <button class="filter-btn" onclick="filterGallery(this,'makeup')">Makeup</button>
+    <button class="filter-btn" onclick="filterGallery(this,'skin')">Skin</button>
+    <button class="filter-btn" onclick="filterGallery(this,'nails')">Nails</button>
+  </div>
+  <div class="gallery-masonry reveal" id="gallery-grid">
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?w=800&q=80&auto=format&fit=crop" alt="Balayage colour transformation" loading="lazy" width="800" height="1000">
+      <div class="g-overlay"><div class="g-label">Balayage</div><div class="g-tag">Colour</div></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&q=80&auto=format&fit=crop" alt="Luxury hair blowout" loading="lazy" width="600" height="600">
+      <div class="g-overlay"><div class="g-label">Silk Blowout</div><div class="g-tag">Hair</div></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?w=600&q=80&auto=format&fit=crop" alt="Bridal makeup look" loading="lazy" width="600" height="600">
+      <div class="g-overlay"><div class="g-label">Bridal Glow</div><div class="g-tag">Makeup</div></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80&auto=format&fit=crop" alt="Luxurious nail art design" loading="lazy" width="800" height="500">
+      <div class="g-overlay"><div class="g-label">Nail Artistry</div><div class="g-tag">Nails</div></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1515688594390-b649af70d282?w=600&q=80&auto=format&fit=crop" alt="Glass skin facial result" loading="lazy" width="600" height="600">
+      <div class="g-overlay"><div class="g-label">Glass Skin</div><div class="g-tag">Skin</div></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600&q=80&auto=format&fit=crop" alt="Precision hair cut" loading="lazy" width="600" height="600">
+      <div class="g-overlay"><div class="g-label">Precision Cut</div><div class="g-tag">Hair</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPERIENCE ─── -->
+<div id="experience" aria-label="Salon experience">
+  <div class="exp-left">
+    <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=900&q=85&auto=format&fit=crop" alt="Lumière salon interior — luxurious styling stations" loading="lazy" width="900" height="1200">
+  </div>
+  <div class="exp-right">
+    <div class="eyebrow" style="color:var(--gold)">The Lumière Experience</div>
+    <h2 class="serif" style="color:var(--cream);margin:1rem 0 1.2rem">A <em>Sanctuary</em><br>of Beauty</h2>
+    <p style="font-size:0.88rem;line-height:1.95;color:rgba(248,243,238,0.6);max-width:380px;margin-bottom:0.5rem">From the moment you arrive, every detail is orchestrated to deliver an extraordinary experience. Premium products, expert hands, and total tranquillity.</p>
+    <div class="exp-grid">
+      <div class="exp-item">
+        <div class="exp-num">100%</div>
+        <div class="exp-label">Premium Products</div>
+        <div class="exp-desc">L'Oréal, Schwarzkopf, Dermalogica and La Mer only</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-num">24hr</div>
+        <div class="exp-label">Booking Support</div>
+        <div class="exp-desc">WhatsApp & online — book anytime</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-num">ISO</div>
+        <div class="exp-label">Certified Hygiene</div>
+        <div class="exp-desc">Medical-grade sterilisation standards</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-num">★ 8</div>
+        <div class="exp-label">Industry Awards</div>
+        <div class="exp-desc">UK Salon of the Year 2022 & 2023</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── TEAM ─── -->
+<section id="team" class="section" aria-labelledby="team-heading">
+  <div class="section-header reveal">
+    <div class="eyebrow">Meet the Experts</div>
+    <h2 id="team-heading" class="serif">Your <em>Artists</em></h2>
+    <p class="section-desc">Award-winning stylists and therapists who bring passion, mastery and genuine care to every appointment.</p>
+  </div>
+  <div class="team-grid">
+    <article class="team-card reveal d1">
+      <div class="team-photo">
+        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=85&auto=format&fit=crop&crop=face" alt="Sofia Laurent — Creative Director and Colour Specialist" loading="lazy" width="600" height="800">
+        <div class="team-photo-overlay">
+          <button class="team-book-btn" onclick="openModal()" aria-label="Book appointment with Sofia Laurent">Book with Sofia ↗</button>
+        </div>
+      </div>
+      <div class="team-name">Sofia Laurent</div>
+      <div class="team-role">Creative Director & Colour Specialist</div>
+      <p class="team-bio">With 14 years on international runways and editorial shoots, Sofia transforms colour into a personal signature. Her balayage techniques are unrivalled in London.</p>
+      <div class="team-badges">
+        <span class="badge">Vogue Certified</span>
+        <span class="badge">L'Oréal Pro</span>
+        <span class="badge">NAHA Winner</span>
+      </div>
+    </article>
+    <article class="team-card reveal d2">
+      <div class="team-photo">
+        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=85&auto=format&fit=crop&crop=face" alt="Amara Nwosu — Senior Stylist and Bridal Expert" loading="lazy" width="600" height="800">
+        <div class="team-photo-overlay">
+          <button class="team-book-btn" onclick="openModal()" aria-label="Book appointment with Amara Nwosu">Book with Amara ↗</button>
+        </div>
+      </div>
+      <div class="team-name">Amara Nwosu</div>
+      <div class="team-role">Senior Stylist & Bridal Expert</div>
+      <p class="team-bio">Amara's bridal artistry has been featured in over 200 weddings across Europe. Precision, emotion and elegance are her trademarks.</p>
+      <div class="team-badges">
+        <span class="badge">Bridal Specialist</span>
+        <span class="badge">Schwarzkopf Pro</span>
+      </div>
+    </article>
+    <article class="team-card reveal d3">
+      <div class="team-photo">
+        <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=85&auto=format&fit=crop&crop=face" alt="Isabelle Chen — Skin Therapist and Nail Artist" loading="lazy" width="600" height="800">
+        <div class="team-photo-overlay">
+          <button class="team-book-btn" onclick="openModal()" aria-label="Book appointment with Isabelle Chen">Book with Isabelle ↗</button>
+        </div>
+      </div>
+      <div class="team-name">Isabelle Chen</div>
+      <div class="team-role">Skin Therapist & Nail Artist</div>
+      <p class="team-bio">A licensed Dermalogica aesthetician whose treatments restore skin to its most luminous state. Her nail artistry has appeared in Harper's Bazaar.</p>
+      <div class="team-badges">
+        <span class="badge">Dermalogica Expert</span>
+        <span class="badge">OPI Pro</span>
+        <span class="badge">Harper's Bazaar</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS ─── -->
+<section id="testimonials" class="section" aria-labelledby="testimonials-heading">
+  <div class="section-header reveal light">
+    <div class="eyebrow">Client Stories</div>
+    <h2 id="testimonials-heading" class="serif" style="color:var(--cream)">What They <em>Say</em></h2>
+    <p class="section-desc" style="color:rgba(248,243,238,0.5)">Real stories from real clients. Unedited, unpaid, and unreservedly kind.</p>
+  </div>
+  <div class="testimonials-grid">
+    <article class="testi-card reveal d1">
+      <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+      <p class="testi-text">"Sofia completely transformed my hair. The colour is exactly what I envisioned — warm, multidimensional and utterly luminous. I've never felt more like myself. The salon itself is a dream."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">
+          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80&auto=format&fit=crop&crop=face" alt="Nadia Rahman" loading="lazy" width="100" height="100">
+        </div>
+        <div>
+          <div class="testi-name">Nadia Rahman</div>
+          <div class="testi-service">Balayage & Precision Cut</div>
+        </div>
+      </div>
+    </article>
+    <article class="testi-card reveal d2">
+      <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+      <p class="testi-text">"Amara did my bridal hair and makeup. On my wedding day I looked exactly as I'd dreamed — and the look lasted beautifully for 14 hours. Every penny was worth it and more."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">
+          <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=100&q=80&auto=format&fit=crop&crop=face" alt="Layla Petrov" loading="lazy" width="100" height="100">
+        </div>
+        <div>
+          <div class="testi-name">Layla Petrov</div>
+          <div class="testi-service">Full Bridal Package</div>
+        </div>
+      </div>
+    </article>
+    <article class="testi-card reveal d3">
+      <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+      <p class="testi-text">"Isabelle's facial gave me the glass skin I'd been chasing for years. The salon feels like a five-star hotel — calm, beautiful, impeccably clean and so expertly run."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">
+          <img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=100&q=80&auto=format&fit=crop&crop=face" alt="Kezia Adeyemi" loading="lazy" width="100" height="100">
+        </div>
+        <div>
+          <div class="testi-name">Kezia Adeyemi</div>
+          <div class="testi-service">Signature Facial</div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ─── OFFERS ─── -->
+<section id="offers" class="section" aria-labelledby="offers-heading">
+  <div class="section-header reveal">
+    <div class="eyebrow">Limited Time</div>
+    <h2 id="offers-heading" class="serif">Beauty <em>Packages</em></h2>
+    <p class="section-desc">Curated collections of our most-loved treatments at exclusive seasonal rates.</p>
+  </div>
+  <div class="offers-grid">
+    <article class="offer-card reveal d1">
+      <div class="offer-img">
+        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&q=80&auto=format&fit=crop" alt="Glow facial ritual package" loading="lazy" width="600" height="400">
+      </div>
+      <div class="offer-name">Glow Ritual</div>
+      <div class="offer-tagline">The ultimate skin reset for city skin</div>
+      <div class="offer-price"><sup>£</sup>195</div>
+      <div class="offer-original">Was £260</div>
+      <div class="offer-timer">⏱ Offer ends Sunday</div>
+      <ul class="offer-features">
+        <li>Signature Facial (60 min)</li>
+        <li>Brow Shaping & Tint</li>
+        <li>Hydrating Face Mask</li>
+        <li>LED Light Therapy</li>
+      </ul>
+      <button class="btn-primary" style="width:100%;justify-content:center" onclick="openModal()">Book This Package</button>
+    </article>
+    <article class="offer-card featured reveal d2">
+      <div class="offer-badge">Most Popular</div>
+      <div class="offer-img">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80&auto=format&fit=crop" alt="Lumière luxury hair experience" loading="lazy" width="600" height="400">
+      </div>
+      <div class="offer-name">Lumière Experience</div>
+      <div class="offer-tagline" style="color:rgba(248,243,238,0.45)">Our most coveted full transformation</div>
+      <div class="offer-price"><sup>£</sup>380</div>
+      <div class="offer-original" style="color:rgba(248,243,238,0.3)">Was £520</div>
+      <div class="offer-timer" style="color:#C9896A">⏱ Only 6 spots this month</div>
+      <ul class="offer-features">
+        <li>Full Colour Transformation</li>
+        <li>Precision Cut & Luxury Blowout</li>
+        <li>Brazilian Keratin Deep Treatment</li>
+        <li>Scalp Therapy Massage</li>
+        <li>Olaplex Repair Mask</li>
+      </ul>
+      <button class="btn-gold" style="width:100%;padding:1rem" onclick="openModal()">Book This Package</button>
+    </article>
+    <article class="offer-card reveal d3">
+      <div class="offer-img">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&q=80&auto=format&fit=crop" alt="Bridal beauty package" loading="lazy" width="600" height="400">
+      </div>
+      <div class="offer-name">Bridal Bliss</div>
+      <div class="offer-tagline">For your most radiant day</div>
+      <div class="offer-price"><sup>£</sup>550</div>
+      <div class="offer-original">Was £700</div>
+      <div class="offer-timer">⏱ Book 4 weeks in advance</div>
+      <ul class="offer-features">
+        <li>Hair & Makeup Trial Session</li>
+        <li>Wedding Day Full Styling</li>
+        <li>Bridesmaid 20% Discount</li>
+        <li>Complimentary Touch-Up Kit</li>
+      </ul>
+      <button class="btn-primary" style="width:100%;justify-content:center" onclick="openModal()">Book This Package</button>
+    </article>
+  </div>
+</section>
+
+<!-- ─── MEMBERSHIP ─── -->
+<div id="membership" aria-label="Loyalty membership programme">
+  <div class="membership-photo">
+    <img src="https://images.unsplash.com/photo-1470259078422-826894b933aa?w=900&q=85&auto=format&fit=crop" alt="Lumière luxury salon interior — membership lounge" loading="lazy" width="900" height="1200">
+    <div class="membership-photo-overlay">
+      <div class="eyebrow">Loyalty Programme</div>
+      <h2>The <em>Lumière</em><br>Inner Circle</h2>
+      <p>Join our exclusive membership and enjoy priority bookings, monthly credits, and privileges curated for our most valued clients.</p>
+      <ul class="perks-list" role="list">
+        <li>Monthly beauty credits — spend anywhere</li>
+        <li>Priority booking — guaranteed slots</li>
+        <li>15–25% off all retail products</li>
+        <li>Exclusive member-only events</li>
+        <li>Complimentary birthday treatment</li>
+        <li>Reward points on every visit</li>
+      </ul>
+    </div>
+  </div>
+  <div class="membership-form">
+    <div class="form-title">Join the Circle</div>
+    <div class="form-subtitle">Choose your tier and begin your beauty journey with Lumière today.</div>
+    <div class="tiers" role="group" aria-label="Select membership tier">
+      <button class="tier-btn" onclick="selectTier(this)" aria-pressed="false">
+        <div class="t-name">Pearl</div>
+        <div class="t-price">£49<small>/mo</small></div>
+      </button>
+      <button class="tier-btn active" onclick="selectTier(this)" aria-pressed="true">
+        <div class="t-name">Gold</div>
+        <div class="t-price">£89<small>/mo</small></div>
+      </button>
+      <button class="tier-btn" onclick="selectTier(this)" aria-pressed="false">
+        <div class="t-name">Diamond</div>
+        <div class="t-price">£149<small>/mo</small></div>
+      </button>
+    </div>
+    <label for="m-name" class="sr-only">Full name</label>
+    <input class="form-input" type="text" id="m-name" placeholder="Full Name" autocomplete="name">
+    <label for="m-email" class="sr-only">Email address</label>
+    <input class="form-input" type="email" id="m-email" placeholder="Email Address" autocomplete="email">
+    <label for="m-phone" class="sr-only">Phone number</label>
+    <input class="form-input" type="tel" id="m-phone" placeholder="Phone Number" autocomplete="tel">
+    <button class="submit-btn" onclick="handleMembership()">Start My Membership →</button>
+  </div>
+</div>
+
+<!-- ─── INSTAGRAM FEED ─── -->
+<section id="insta" class="section" aria-labelledby="insta-heading">
+  <div class="section-header reveal">
+    <div class="eyebrow">Instagram</div>
+    <h2 id="insta-heading" class="serif">Follow Our <em>Journey</em></h2>
+    <p class="section-desc">Daily beauty inspiration from inside the salon. Real clients, real transformations.</p>
+  </div>
+  <div class="insta-grid reveal" role="list" aria-label="Instagram feed">
+    <div class="insta-item" role="listitem"><img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=400&q=80&auto=format&fit=crop" alt="Balayage transformation — Instagram post" loading="lazy" width="400" height="400"><div class="insta-overlay"><span class="insta-icon" aria-hidden="true">♡</span></div></div>
+    <div class="insta-item" role="listitem"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&q=80&auto=format&fit=crop" alt="Luxury blowout — Instagram post" loading="lazy" width="400" height="400"><div class="insta-overlay"><span class="insta-icon" aria-hidden="true">♡</span></div></div>
+    <div class="insta-item" role="listitem"><img src="https://images.unsplash.com/photo-1581182800629-7d90925ad072?w=400&q=80&auto=format&fit=crop" alt="Bridal hair — Instagram post" loading="lazy" width="400" height="400"><div class="insta-overlay"><span class="insta-icon" aria-hidden="true">♡</span></div></div>
+    <div class="insta-item" role="listitem"><img src="https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?w=400&q=80&auto=format&fit=crop" alt="Skincare result — Instagram post" loading="lazy" width="400" height="400"><div class="insta-overlay"><span class="insta-icon" aria-hidden="true">♡</span></div></div>
+    <div class="insta-item" role="listitem"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80&auto=format&fit=crop" alt="Nail art — Instagram post" loading="lazy" width="400" height="400"><div class="insta-overlay"><span class="insta-icon" aria-hidden="true">♡</span></div></div>
+    <div class="insta-item" role="listitem"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&q=80&auto=format&fit=crop" alt="Salon interior — Instagram post" loading="lazy" width="400" height="400"><div class="insta-overlay"><span class="insta-icon" aria-hidden="true">♡</span></div></div>
+  </div>
+  <div class="insta-cta reveal">
+    <p class="insta-handle">Follow us <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow Lumière on Instagram">@lumiere.salon</a> for daily beauty inspiration</p>
+  </div>
+</section>
+
+<!-- ─── CTA BANNER ─── -->
+<section id="cta-banner" aria-label="Call to action">
+  <span class="cta-tag reveal">Start Your Transformation</span>
+  <h2 class="cta-h2 reveal">
+    Your Most <em>Beautiful</em><br>Self Awaits
+  </h2>
+  <p class="cta-desc reveal">Every journey begins with a single appointment. Let our experts guide your transformation at Lumière — London's most celebrated beauty destination.</p>
+  <div class="cta-btns reveal">
+    <button class="btn-gold" onclick="openModal()">Book Appointment →</button>
+    <a href="tel:+442079460892" class="btn-ghost">Call +44 20 7946 0892</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">LUM<span>IÈ</span>RE</div>
+      <p class="footer-about">A sanctuary of beauty and artistry in the heart of Mayfair. Where expert hands and premium products come together to reveal your most luminous self.</p>
+      <div class="footer-socials" role="list" aria-label="Social media links">
+        <a href="https://instagram.com" class="footer-social" target="_blank" rel="noopener" aria-label="Instagram" role="listitem">ig</a>
+        <a href="https://facebook.com" class="footer-social" target="_blank" rel="noopener" aria-label="Facebook" role="listitem">fb</a>
+        <a href="https://tiktok.com" class="footer-social" target="_blank" rel="noopener" aria-label="TikTok" role="listitem">tk</a>
+        <a href="https://pinterest.com" class="footer-social" target="_blank" rel="noopener" aria-label="Pinterest" role="listitem">pt</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#services">Hair Styling</a></li>
+        <li><a href="#services">Hair Colouring</a></li>
+        <li><a href="#services">Bridal Makeup</a></li>
+        <li><a href="#services">Skin Treatments</a></li>
+        <li><a href="#services">Nail Art</a></li>
+        <li><a href="#services">Keratin Treatments</a></li>
+        <li><a href="#services">Facial Therapy</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#offers">Packages</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#" onclick="openModal();return false;">Book Online</a></li>
+        <li><a href="#">Gift Cards</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Visit Us</div>
+      <div class="contact-row">
+        <span class="contact-label">Addr</span>
+        <span class="contact-val">24 Blossom Lane<br>Mayfair, London W1K 4PL</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Tel</span>
+        <span class="contact-val"><a href="tel:+442079460892" style="color:inherit">+44 20 7946 0892</a></span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Email</span>
+        <span class="contact-val"><a href="mailto:hello@lumieresalon.co.uk" style="color:inherit">hello@lumieresalon.co.uk</a></span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Hours</span>
+        <span class="contact-val">Mon–Sat: 9am – 8pm<br>Sunday: 10am – 6pm</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 Lumière Beauty Salon. All rights reserved.</p>
+    <nav class="footer-legal" aria-label="Legal links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Accessibility</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- ─── BOOKING MODAL ─── -->
+<div class="overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close booking form">✕</button>
+    <div id="modal-form">
+      <h2 class="modal-title" id="modal-title">Book Your Visit</h2>
+      <p class="modal-sub">Complete the form below and our team will confirm your appointment within 2 hours. Alternatively, call us on <a href="tel:+442079460892" style="color:var(--gold)">+44 20 7946 0892</a>.</p>
+      <div class="modal-row">
+        <div>
+          <label for="f-name" class="sr-only">Full name</label>
+          <input class="form-input" type="text" id="f-name" placeholder="Full Name *" autocomplete="name">
+        </div>
+        <div>
+          <label for="f-email" class="sr-only">Email address</label>
+          <input class="form-input" type="email" id="f-email" placeholder="Email Address *" autocomplete="email">
+        </div>
+      </div>
+      <div class="modal-row">
+        <div>
+          <label for="f-phone" class="sr-only">Phone number</label>
+          <input class="form-input" type="tel" id="f-phone" placeholder="Phone Number" autocomplete="tel">
+        </div>
+        <div>
+          <label for="f-service" class="sr-only">Select service</label>
+          <select class="form-input" id="f-service" style="cursor:pointer">
+            <option value="">Select a Service *</option>
+            <option>Hair Styling — from £85</option>
+            <option>Hair Colouring — from £140</option>
+            <option>Bridal Makeup — from £250</option>
+            <option>Skin Treatment — from £110</option>
+            <option>Nail Art — from £55</option>
+            <option>Keratin Treatment — from £180</option>
+            <option>Glow Ritual Package — £195</option>
+            <option>Lumière Experience — £380</option>
+            <option>Bridal Bliss Package — £550</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-row">
+        <div>
+          <label for="f-stylist" class="sr-only">Choose stylist</label>
+          <select class="form-input" id="f-stylist" style="cursor:pointer">
+            <option value="">Any Stylist</option>
+            <option>Sofia Laurent</option>
+            <option>Amara Nwosu</option>
+            <option>Isabelle Chen</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-date" class="sr-only">Preferred date</label>
+          <input class="form-input" type="date" id="f-date">
+        </div>
+      </div>
+      <label for="f-notes" class="sr-only">Additional notes</label>
+      <textarea class="form-input" id="f-notes" rows="3" placeholder="Any notes or special requests?" style="resize:vertical;min-height:80px"></textarea>
+      <button class="submit-btn" onclick="submitBooking()" style="margin-top:0.5rem">Request Appointment →</button>
+      <p style="font-size:0.7rem;color:var(--light);margin-top:1rem;line-height:1.7">By submitting, you agree to our <a href="#" style="color:var(--gold)">Privacy Policy</a>. We will never share your data.</p>
+    </div>
+    <div class="modal-success" id="modal-success" role="status" aria-live="polite">
+      <div class="ms-icon">✦</div>
+      <div class="ms-title">Request Received!</div>
+      <p class="ms-text">Thank you! We'll confirm your Lumière appointment within 2 hours. Please check your inbox — and we can't wait to welcome you.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Back to Top -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="alert" aria-live="assertive"></div>
+
+<!-- Hidden screen reader only class -->
+<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+
+ <script src="script.js"></script>
+</body>
+</html>
